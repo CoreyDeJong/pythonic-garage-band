@@ -1,5 +1,8 @@
-from pythonic_garage_band import __version__
+from pythonic_garage_band.band import Musicians, Band
 
 
-def test_version():
-    assert __version__ == '0.1.0'
+def test_BandName():
+    actual = Band("radiohead").name
+    expected = "radiohead"
+    assert expected == actual
+
